@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #e2ecf2);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1542281286-9e0a16bb7366') center/cover no-repeat;
+      height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #2c3e50;
+    }
+
+    .about, .contact, .project, .resume {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .skills li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .icons a {
+      margin: 0 10px;
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    .progress {
+      background: #eee;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 5px;
+    }
+
+    .progress span {
+      display: block;
+      height: 12px;
+      background: #3498db;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1 data-aos="fade-down">Hi, I'm <span style="color:#000000;">Danny Fareez</span></h1>
+    <p data-aos="fade-up">A Computer Science Student & Aspiring Web Developer</p>
+  </header>
+
+ <section id="about" class="about" data-aos="fade-up">
+  <!-- Profile Picture -->
+  <div style="text-align: center; margin-bottom: 20px;">
+    <img src="danyPic.jpg" alt="Pic" style="width:150px; height:150px; border-radius:50%; object-fit:cover; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+  </div>
+
+  <!-- About Text -->
+  <h2>About Me</h2>
+  <p>I am a computer science student passionate about developing responsive websites and applications. I enjoy problem-solving, teamwork, and always eager to learn new technologies.</p>
+</section>
+
+
+  <section id="projects" data-aos="fade-right">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3><i class="fas fa-code"></i> Portfolio Website</h3>
+      <p>A personal website showcasing my work and skills using HTML, CSS, and animations.</p>
+    </div>
+    <div class="project">
+      <h3><i class="fas fa-check-circle"></i> Task Manager App</h3>
+      <p>Simple To-Do List app using JavaScript for adding, editing, and deleting tasks.</p>
+    </div>
+  </section>
+
+  <section id="resume" class="resume" data-aos="fade-left">
+    <h2>Resume</h2>
+    <p><a href="Resume.pdf" download style="color:#3498db; font-weight: bold;"><i class="fas fa-download"></i> Download PDF</a></p>
+
+    <h3>Education</h3>
+    <p><strong>Universiti Teknologi MARA (UiTM), Campus Jasin</strong><br> Diploma in Computer Science</p>
+
+   <h3>Skills</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+  
+  <!-- HTML -->
+  <div style="width: 80px; text-align: center;">
+    <i class="fab fa-html5" style="font-size:48px; color:#e44d26;"></i>
+    <p>HTML</p>
+  </div>
+
+  <!-- CSS -->
+  <div style="width: 80px; text-align: center;">
+    <i class="fab fa-css3-alt" style="font-size:48px; color:#2965f1;"></i>
+    <p>CSS</p>
+  </div>
+
+  <!-- JavaScript -->
+  <div style="width: 80px; text-align: center;">
+    <i class="fab fa-js-square" style="font-size:48px; color:#f0db4f;"></i>
+    <p>JavaScript</p>
+  </div>
+
+  <!-- Java -->
+  <div style="width: 80px; text-align: center;">
+    <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" style="width:48px; height:48px;" alt="Java" />
+    <p>Java</p>
+  </div>
+
+  <!-- GitHub -->
+  <div style="width: 80px; text-align: center;">
+    <i class="fab fa-github" style="font-size:48px; color:#333;"></i>
+    <p>GitHub</p>
+  </div>
+
+  <!-- MySQL -->
+  <div style="width: 80px; text-align: center;">
+    <img src="https://img.icons8.com/ios-filled/50/4479A1/mysql-logo.png" style="width:48px; height:48px;" alt="MySQL" />
+    <p>MySQL</p>
+  </div>
+
+  <!-- Canva -->
+  <div style="width: 80px; text-align: center;">
+    <img src="https://img.icons8.com/color/48/canva.png" style="width:48px; height:48px;" alt="Canva" />
+    <p>Canva</p>
+  </div>
+
+</div>
+
+</section>
+
+  <section id="contact" class="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p><i class="fas fa-envelope"></i> danreez1307@gmail.com</p>
+    <p><i class="fab fa-github"></i> <a href="https://github.com/DanyFarez" target="_blank">github.com/DanyFarez</a></p>
+    <p><i class="fab fa-linkedin"></i> <a href="www.linkedin.com/in/danyfarez" target="_blank">linkedin.com/in/yourprofile</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Danny Fareez</p>
+    <div class="icons">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:danreez1307@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+</body>
+</html>
