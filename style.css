@@ -1,0 +1,112 @@
+/* style.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #f0f4f8, #e2ecf2);
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: url('https://images.unsplash.com/photo-1542281286-9e0a16bb7366') center/cover no-repeat;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f39c12;
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.about, .contact, .project, .resume {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.skills li {
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.progress {
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.progress span {
+  display: block;
+  height: 12px;
+  background: #3498db;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+}
